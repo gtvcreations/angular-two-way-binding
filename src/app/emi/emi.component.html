@@ -1,0 +1,7 @@
+<h2>{{title}}</h2>
+<input type="number" [(ngModel)]="amount" (ngModelChange)="modelChanged($event)" placeholder="Loan Amount" value="{{amount}}">
+<input type="number" [(ngModel)]="rate" (ngModelChange)="modelChanged($event)" placeholder="Interest Rate (%)" value="{{rate}}">
+<input type="number" [(ngModel)]="year" (ngModelChange)="modelChanged($event)" placeholder="Loan Term (Year)" value="{{year}}">
+<p>EMI: {{emi | currency: 'INR'}}</p>
+<p>Total Pay: {{total | currency: 'INR'}}</p>
+<p>Difference: {{diff | currency: 'INR'}}</p>

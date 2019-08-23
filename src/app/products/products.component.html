@@ -1,0 +1,5 @@
+<h2>{{title}}</h2>
+<p>{{errorMsg}}</p>
+<ul *ngFor="let product of products">
+    <li app-product [detail]="product"></li>
+</ul>
